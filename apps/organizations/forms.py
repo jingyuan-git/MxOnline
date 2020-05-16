@@ -25,3 +25,5 @@ class AddAskForm(forms.ModelForm):
         """
         mobile = self.cleaned_data["mobile"]
         regex_mobile = "^1[358]\d{9}|^146\d{8}$|^176\d{8}$"
+        p = re.compile(regex_mobile)
+        # if p.match()
